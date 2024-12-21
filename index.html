@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Clicker</h1>
+    </header>
+
+    <main>
+        <div id="game-container">
+            <div id="stats">
+                <div id="pizza-count">Pizzas: <span id="pizzas">0</span></div>
+                <div id="pizzas-per-second">Per Second: <span id="pps">0</span></div>
+            </div>
+            
+            <div id="game-area">
+                <img id="pizza" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pepperoni_pizza.jpg/800px-Pepperoni_pizza.jpg" alt="Pizza">
+            </div>
+
+            <div id="shop">
+                <h2>Pizza Shop</h2>
+                <div class="upgrade" id="auto-chef">
+                    <h3>Auto Chef</h3>
+                    <p>Cost: <span class="cost">15</span> pizzas</p>
+                    <p>You own: <span class="owned">0</span></p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="upgrade" id="pizza-oven">
+                    <h3>Pizza Oven</h3>
+                    <p>Cost: <span class="cost">100</span> pizzas</p>
+                    <p>You own: <span class="owned">0</span></p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="upgrade" id="pizzeria">
+                    <h3>Pizzeria</h3>
+                    <p>Cost: <span class="cost">500</span> pizzas</p>
+                    <p>You own: <span class="owned">0</span></p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
