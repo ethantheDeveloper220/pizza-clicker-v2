@@ -4,19 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Clicker Game</title>
+    <title>Pizza Clicker Deluxe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Pizza Clicker</h1>
+        <h1>Pizza Clicker Deluxe</h1>
+        <div id="rebirth-stats">
+            Rebirth Level: <span id="rebirth-level">0</span>
+            <button id="rebirth-btn" disabled>Rebirth (Requires 1M pizzas)</button>
+        </div>
     </header>
 
     <main>
         <div id="game-container">
-            <div id="stats">
-                <div id="pizza-count">Pizzas: <span id="pizzas">0</span></div>
-                <div id="pizzas-per-second">Per Second: <span id="pps">0</span></div>
+            <div id="stats-container">
+                <div id="stats">
+                    <div id="pizza-count">Pizzas: <span id="pizzas">0</span></div>
+                    <div id="pizzas-per-second">Per Second: <span id="pps">0</span></div>
+                    <div id="multiplier">Current Multiplier: x<span id="multiply">1</span></div>
+                </div>
+                <div id="rebirth-bonuses">
+                    <h3>Rebirth Bonuses</h3>
+                    <ul id="active-bonuses">
+                        <!-- Bonuses will be added here dynamically -->
+                    </ul>
+                </div>
             </div>
             
             <div id="game-area">
@@ -24,24 +37,15 @@
             </div>
 
             <div id="shop">
-                <h2>Pizza Shop</h2>
-                <div class="upgrade" id="auto-chef">
-                    <h3>Auto Chef</h3>
-                    <p>Cost: <span class="cost">15</span> pizzas</p>
-                    <p>You own: <span class="owned">0</span></p>
-                    <button class="buy-btn">Buy</button>
+                <h2>Pizza Empire Shop</h2>
+                <div id="shop-tabs">
+                    <button class="tab-btn active" data-tab="basic">Basic</button>
+                    <button class="tab-btn" data-tab="automation">Automation</button>
+                    <button class="tab-btn" data-tab="multipliers">Multipliers</button>
+                    <button class="tab-btn" data-tab="special">Special</button>
                 </div>
-                <div class="upgrade" id="pizza-oven">
-                    <h3>Pizza Oven</h3>
-                    <p>Cost: <span class="cost">100</span> pizzas</p>
-                    <p>You own: <span class="owned">0</span></p>
-                    <button class="buy-btn">Buy</button>
-                </div>
-                <div class="upgrade" id="pizzeria">
-                    <h3>Pizzeria</h3>
-                    <p>Cost: <span class="cost">500</span> pizzas</p>
-                    <p>You own: <span class="owned">0</span></p>
-                    <button class="buy-btn">Buy</button>
+                <div id="shop-content">
+                    <!-- Upgrades will be added here dynamically -->
                 </div>
             </div>
         </div>
