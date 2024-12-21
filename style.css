@@ -1,98 +1,55 @@
 /* style.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Previous CSS styles remain, adding new styles: */
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #ff6b6b;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-#game-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
-}
-
-#stats {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#pizza-count, #pizzas-per-second {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-}
-
-#game-area {
-    text-align: center;
-    padding: 2rem;
-}
-
-#pizza {
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-    transition: transform 0.1s;
-    border-radius: 50%;
-}
-
-#pizza:active {
-    transform: scale(0.95);
-}
-
-#shop {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#shop h2 {
-    text-align: center;
-    color: #ff6b6b;
+#shop-tabs {
+    display: flex;
+    gap: 0.5rem;
     margin-bottom: 1rem;
 }
 
-.upgrade {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    border: 1px solid #dee2e6;
-}
-
-.buy-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+.tab-btn {
     padding: 0.5rem 1rem;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    margin-top: 0.5rem;
+    background-color: #ddd;
 }
 
-.buy-btn:hover {
-    background-color: #45a049;
+.tab-btn.active {
+    background-color: #ff6b6b;
+    color: white;
 }
 
-.buy-btn:disabled {
+#rebirth-btn {
+    padding: 0.5rem 1rem;
+    background-color: #9c27b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+#rebirth-btn:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
+}
+
+.upgrade-category {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+#rebirth-bonuses {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+}
+
+.bonus-item {
+    color: #2e7d32;
+    margin: 0.25rem 0;
 }
